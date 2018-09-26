@@ -1,0 +1,50 @@
+npm run build
+to compile code down to ES5
+
+
+npm start
+run the local server - webpack dev server
+
+--CommonJS Module Syntax
+module.exports = {}
+Makes this available to other files by adding
+const person = require(./mymodule);
+--Don't need the .js file extension
+--creates the build folder with the app.bundle.js file, this file will have all of the code that is compiled down.
+
+ES2015 Module
+import  { perons, functionName } from './mymodule';
+-- add multiple arguments to make available
+
+import * as mod from './mymodule';
+-- imports everything from the file into the variable named 'mod'.
+
+--SETTING SOMETHING AS DEFAULT DOES NOT REQUIRE THE PARANTHESIS TO IMPORT HAS SHOWN BELOW
+const greeting = 'Hello World';
+export default greeting;
+
+import greeting from './mymodule';
+
+-- Run npm init to add the node modules folder
+
+--Install JSON Placeholder Server -- Launch this in a seperate console window so that you can leave this running
+npm install json-server --save
+--save will save this to the package.json file
+
+RUN THE Server - FAKE REST API
+npm run json:server
+
+
+--Time in console 
+console.time(uniqueName)
+...code here
+console.timeEnd(uniqueName)
+
+-- To compile the application down to the build folder
+npm run build
+--index.html, assets folder and build folder is all that is required to be uploaded to the hosting server
+(shared host)
+-- The api would normally be hosted on some backend hosting service 
+
+
+*****************Needs update on the order in which to launch the commands **************** 
